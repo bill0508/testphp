@@ -14,7 +14,9 @@ if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
 } else {
   $ip_address = $_SERVER['REMOTE_ADDR'];
 }
-error_log("This is an access from " + $ip_address+" at " + date('Y-m-d H:i:s'), 3, "/var/log/testphp.log");
+$now_date = date('Y-m-d H:i:s');
+$rnd = rand(100,999);
+error_log("[$now_date] ($rnd) This is an access from $ip_address\n", 3, "/opt/app-root/var/log/testphp.log");
 ?>
 </body>
 </html>
