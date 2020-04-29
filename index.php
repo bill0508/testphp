@@ -5,7 +5,7 @@
 <body>
 This is a test page for php!<br>
 <?php echo 'If you see this page, it means it is working!<br>'; ?>
-v1.1
+v1.2
 <?php
 if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
   $ip_address = $_SERVER['HTTP_CLIENT_IP'];
